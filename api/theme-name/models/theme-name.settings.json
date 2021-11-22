@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theme-name",
+  "info": {
+    "name": "themes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "faqs": {
+      "via": "theme",
+      "collection": "theme"
+    }
+  }
+}

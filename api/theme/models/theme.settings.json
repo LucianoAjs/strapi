@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "",
+  "info": {
+    "name": "Faq",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "theme": {
+      "via": "faqs",
+      "model": "theme-name"
+    },
+    "sub_theme": {
+      "via": "faqs",
+      "model": "sub-theme"
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}
