@@ -15,7 +15,6 @@ module.exports = ({ env }) => ({
         ssl: { rejectUnauthorized: false },
       },
       options: {
-        ssl: { rejectUnauthorized: false },
         pool: {
           min: 0,
           max: 10,
