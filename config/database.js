@@ -16,8 +16,6 @@ module.exports = ({ env }) => ({
       },
       options: {
         ssl: { rejectUnauthorized: false },
-<<<<<<< HEAD
-=======
         pool: {
           min: 0,
           max: 10,
@@ -25,7 +23,6 @@ module.exports = ({ env }) => ({
           createTimeoutMillis: 30000,
           acquireTimeoutMillis: 30000
         }
->>>>>>> 73efd2493253e2c03fb84428e0fe44cca44d0f2d
       },
     },
   },
