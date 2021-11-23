@@ -1,17 +1,16 @@
 module.exports = ({ env }) => ({
-  defaultConnection: 'default',
+  defaultConnection: "default",
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: "bookshelf",
       settings: {
-        // client: 'sqlite',
-        // filename: env('DATABASE_FILENAME', '.tmp/data.db'),
-        client: 'postgres',
-        host: env('DATABASE_HOST', '127.0.0.1'),
-        port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'pg-strapi-faq-rafael'),
-        username: env('DATABASE_USERNAME', ''),
-        password: env('DATABASE_PASSWORD', ''),
+        client: "postgres",
+        host: env("DATABASE_HOST", "127.0.0.1"),
+        srv: env.bool("DATABASE_SRV", true),
+        port: env.int("DATABASE_PORT", 5432),
+        database: env("DATABASE_NAME", ""),
+        username: env("DATABASE_USERNAME", "strapi-database-teste"),
+        password: env("DATABASE_PASSWORD", ""),
         ssl: { rejectUnauthorized: false },
       },
       options: {
@@ -20,8 +19,8 @@ module.exports = ({ env }) => ({
           max: 10,
           idleTimeoutMillis: 30000,
           createTimeoutMillis: 30000,
-          acquireTimeoutMillis: 30000
-        }
+          acquireTimeoutMillis: 30000,
+        },
       },
     },
   },
